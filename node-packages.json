@@ -1,0 +1,10 @@
+[
+  "tileserver-gl"
+, "tileserver-gl-light"
+, "@maplibre/maplibre-gl-style-spec"
+, "mkdirp"
+, "variable-replacer"
+, "json"
+, "commander"
+, "cast-less-vars-to-json"
+]
