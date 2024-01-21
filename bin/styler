@@ -36,6 +36,8 @@ cat $styledir/style.json | json -e "this.layers = `json -g -f $ldump_replaced`" 
 # replace vars in style and write the result
 variable-replacer --data=$vname $stmp $sname "${@:3}"
 
+gl-style-validate "$sname"
+
 #rm $vname $ldump $stmp
 echo "Style written to $sname"
 
