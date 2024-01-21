@@ -4,7 +4,7 @@ set -e
 
 if [ "$#" -lt 2 ]; then
     echo "Usage: $0 <styledir> <outputdir> [extra options for variable replacer]"
-    exit -1
+    exit 255
 fi
 
 PATH=`npm bin`:$PATH
