@@ -19,7 +19,7 @@ ldump_replaced=`mktemp --suffix=.json`
 stmp=`mktemp --suffix=.json`
 
 # load variables
-lessc --variables-output=$vname $styledir/variables.less > /dev/null
+./bin/less-to-json.js "$styledir/variables.less" "$vname"
 
 # load layers
 for layer in $(cat $styledir/layers)
