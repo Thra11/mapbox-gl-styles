@@ -7,7 +7,7 @@ if [ "$#" -lt 2 ]; then
     exit 255
 fi
 
-PATH=`npm bin`:$PATH
+#PATH=`npm bin`:$PATH
 
 styledir=${1%/}
 outdir=$2
